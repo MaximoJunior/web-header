@@ -263,9 +263,11 @@ header {
     justify-content: center;
     align-items: center;
     border: none;
+    outline: none;
     padding: 0 3px;
     background-color: #086cc2;
     color: white;
+    cursor: pointer;
 }
 
 .btn-toggle-icon {
@@ -292,7 +294,7 @@ nav {
         align-items: center;
     }
 
-    .logo {
+    .logo-container .logo {
         width: 120px;
         height: 36px;
     }
@@ -371,6 +373,7 @@ nav {
     .btn-toggle {
         display: none;
     }
+  
     /*------------------------*/
 
 
