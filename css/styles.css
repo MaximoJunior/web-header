@@ -17,7 +17,7 @@
 header {
     width: 100%;
     height: 55px;
-    overflow: hidden;
+    position: relative;
     background-color: var(--background-color-header);
     display: flex;
     justify-content: space-between;
@@ -69,9 +69,27 @@ header {
 
 /* nav bar */
 .nav-bar {
-    display: none;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 55px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--background-color-header);
+    transition: height 500ms ease-in-out;
     overflow: hidden;
-    justify-content: flex-end;
+}
+
+.open-nav-bar {
+  padding: 20px 0;
+  height: auto;
 }
 
 .nav-bar .col-1 {
@@ -80,7 +98,8 @@ header {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .nav-bar .col-2 {
@@ -89,7 +108,8 @@ header {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .nav-link {
@@ -138,7 +158,7 @@ header {
 }
 
 .nav-link-phone-container::before {
-   display: block;
+   display: none;
    content: "";
    position: absolute;
    border-left: 1px dotted var(--color-main-text);;
@@ -181,7 +201,6 @@ header {
     display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
-    overflow: hidden;
 }
 
 .social-media {
@@ -288,6 +307,10 @@ nav {
         display: block;
     }
 
+    .nav-bar {
+        top: 85px;
+    }
+
     .social-media .social-media-link {
         width: 80px;
     }
@@ -319,28 +342,47 @@ nav {
         height: 100px;
     }
 
-    .nav-bar{
-        display: flex;
-    }
-
     .logo-container .logo {
         width: 132px;
         height: 35px;
     }
+
     .logo-title {
         margin-left: 3px;
     }
+     
+    /*------ Nav Bar---------*/
+    .nav-bar{
+        flex-direction: row;
+        justify-content: flex-start;
+        position: initial;
+        height: auto;
+        width: auto;
+    }
+    
+    .nav-bar .col-1 {
+      flex-direction: row;
+    }
+
+    .nav-link-phone-container::before {
+        display: block;
+    }
+
+    .btn-toggle {
+        display: none;
+    }
+    /*------------------------*/
+
 
     .social-media .social-media-link {
         width: 100px;
-    }
-    .btn-toggle {
-        display: none;
     }
 
 }
 
 @media screen and (min-width: 1250px){ 
+
+    /*-------Nav Bar------------*/
     .nav-link {
         padding: 5px 16px;
     }
