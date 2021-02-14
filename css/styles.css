@@ -40,7 +40,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 15px;
+    padding: 0 14px;
 }
 .logo-container .logo {
     width: 91px;
@@ -124,12 +124,11 @@ header {
     justify-content: center;
     text-decoration: none;
     text-align: center;
-    padding: 5px 9px;
-    opacity: 0.9;
+    padding: 5px 8px;
 }
 
 .nav-link:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .nav-link-tag-english {
@@ -148,7 +147,7 @@ header {
 }
 
 .nav-link .link-icon {
-    margin-top: -3px;
+    margin-top: -2px;
     font-size: 15px;
     color: var(--color-main-text);
 }
@@ -162,7 +161,7 @@ header {
    content: "";
    position: absolute;
    border-left: 1px dotted var(--color-main-text);;
-   width: 4px;
+   width: 3px;
    height: 80%;
    left: -1px;
    top: 50%;
@@ -183,8 +182,8 @@ header {
 }
 
 .icon-number-phone{
-    width: 20px;
-    height: 20;
+    width: 21px;
+    height: 21;
 }
 
 
@@ -345,8 +344,8 @@ nav {
     }
 
     .logo-container .logo {
-        width: 132px;
-        height: 35px;
+        width: 135px;
+        height: 40px;
     }
 
     .logo-title {
