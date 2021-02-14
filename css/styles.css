@@ -134,7 +134,8 @@ header {
 .nav-link-tag-phone {
     font-size: 9px;
     font-family: var(--font-asian);
-    color: #444444;
+    color: var(--color-main-text);
+    letter-spacing: 2px;
 }
 
 .icon-number-phone{
