@@ -375,9 +375,14 @@ nav {
   
     /*------------------------*/
 
-
     .social-media .social-media-link {
         width: 100px;
+    }
+
+    .social-media-link-logo {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 3px;
     }
 
 }
