@@ -5,7 +5,7 @@
    --background-color-header: #dde3e8;
    --font-asian: 'Noto Sans JP', sans-serif;
    --font-english:  'Open Sans', sans-serif;
-   --nav-link-tag-color: #444444;
+   --color-main-text: #444444;
 }
 
 *{
@@ -44,9 +44,8 @@ header {
   flex-direction: column;
   font-size: 8px;
   font-family: var(--font-asian);
-  color: var(--nav-link-tag-color);
+  color: var(--color-main-text);
   letter-spacing: 1px;
-  opacity: 0.9;
 }
 
 .logo-title .logo-title-dot {
@@ -94,20 +93,20 @@ header {
     font-family: var(--font-english);
     font-style: oblique;
     font-weight: bold;
-    color: var(--nav-link-tag-color);
+    color: var(--color-main-text);
 }
 
 .nav-link-tag-asian {
     font-size: 16px;
     font-family: var(--font-asian);
     letter-spacing: 1px;
-    color: var(--nav-link-tag-color);
+    color: var(--color-main-text);
 }
 
 .nav-link .link-icon {
     margin-top: -3px;
     font-size: 15px;
-    color: var(--nav-link-tag-color);
+    color: var(--color-main-text);
 }
 
 .nav-link-phone-container {
@@ -118,7 +117,7 @@ header {
    display: block;
    content: "";
    position: absolute;
-   border-left: 1px dotted var(--nav-link-tag-color);;
+   border-left: 1px dotted var(--color-main-text);;
    width: 4px;
    height: 80%;
    left: -1px;
