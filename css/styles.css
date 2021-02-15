@@ -5,6 +5,7 @@
    --background-color-header: #dde3e8;
    --font-asian: 'Noto Sans JP', sans-serif;
    --font-english:  'Open Sans', sans-serif;
+   --color-logo-title: #111a22;
    --color-main-text: #444444;
 }
 
@@ -56,7 +57,7 @@ header {
   flex-direction: column;
   font-size: 8px;
   font-family: var(--font-asian);
-  color: var(--color-main-text);
+  color: var(--color-logo-title);
   letter-spacing: 1px;
 }
 
@@ -301,7 +302,7 @@ nav {
     .logo-title {
         flex-direction: row;
         font-size: 11px;
-        margin-left: 8px;
+        margin-left: 10px;
     }
 
     .logo-container .logo-title-dot {
@@ -349,7 +350,7 @@ nav {
     }
 
     .logo-title {
-        margin-left: 3px;
+        margin-left: 10px;
     }
      
     /*------ Nav Bar---------*/
